@@ -44,7 +44,7 @@ export default function GaragePage() {
                     <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wide text-foreground">
                       {car.name}
                     </h2>
-                    <p className="mt-2 text-muted-foreground">{car.subtitle}</p>
+                    <p className="mt-2 text-muted-foreground">{t(car.subtitleKey as never)}</p>
                   </div>
 
                   {/* Quick specs */}

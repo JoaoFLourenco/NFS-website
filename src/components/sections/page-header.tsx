@@ -16,12 +16,12 @@ export function PageHeader({
   return (
     <div
       className={cn(
-        "pt-28 pb-12 px-4",
+        "pt-40 pb-12 px-4",
         centered && "text-center",
         className
       )}
     >
-      <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-gradient">
+      <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-gradient leading-relaxed">
         {title}
       </h1>
       {subtitle && (

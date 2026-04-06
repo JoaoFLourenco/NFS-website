@@ -62,7 +62,7 @@ function CarDetailContent({ car }: { car: Car }) {
             >
               {car.name}
             </h1>
-            <p className="mt-3 text-lg text-muted-foreground">{car.subtitle}</p>
+            <p className="mt-3 text-lg text-muted-foreground">{t(car.subtitleKey as never)}</p>
           </FadeIn>
         </div>
       </section>

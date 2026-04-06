@@ -13,7 +13,7 @@ export interface Car {
   slug: string;
   name: string;
   year: number;
-  subtitle: string;
+  subtitleKey: string;
   accentColor: string;
   heroImage: string;
   specCategories: CarSpecCategory[];

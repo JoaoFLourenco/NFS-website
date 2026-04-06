@@ -21,7 +21,7 @@
   "about": {
     "title": "About Us",
     "who_title": "Who Are We?",
-    "who_text": "Nova Formula Student is a student team from FCT NOVA that designs, builds and competes with electric cars in the Formula Student competition. Founded with the mission of providing hands-on engineering experience, the team brings together students from various fields such as mechanical engineering, electrical engineering, computer science and management.",
+    "who_text": "Nova Formula Student is a student team from FCT NOVA that designs, builds and competes with cars in Formula Student competitions. Founded with the mission of providing hands-on engineering experience, the team brings together students from various fields such as mechanical engineering, electrical engineering, computer science and management.",
     "how_title": "How Does It Work?",
     "how_text": "Formula Student is the world's largest engineering competition for university students. Teams design and build a race car and are evaluated in static and dynamic events.",
     "static_events": "Static Events",
@@ -68,7 +68,11 @@
     "power": "Power",
     "torque": "Torque",
     "battery": "Battery",
-    "no_photos": "Photos coming soon"
+    "no_photos": "Photos coming soon",
+    "fsnovaev01_subtitle": "Our first electric vehicle",
+    "fsfenixevo_subtitle": "Evolution of the Fenix platform",
+    "fsfenix_subtitle": "Rising from the ashes",
+    "fsdragon_subtitle": "Where it all began"
   },
   "partners": {
     "title": "Partners",

@@ -21,7 +21,7 @@
   "about": {
     "title": "Sobre Nós",
     "who_title": "Quem Somos?",
-    "who_text": "A Nova Formula Student é uma equipa de estudantes da FCT NOVA que projeta, constrói e compete com carros elétricos na competição Formula Student. Fundada com a missão de proporcionar uma experiência prática em engenharia, a equipa reúne alunos de diversas áreas como engenharia mecânica, eletrotécnica, informática e gestão.",
+    "who_text": "A Nova Formula Student é uma equipa de estudantes da FCT NOVA que projeta, constrói e compete com carros nas competições de Formula Student. Fundada com a missão de proporcionar uma experiência prática em engenharia, a equipa reúne alunos de diversas áreas como engenharia mecânica, eletrotécnica, informática e gestão.",
     "how_title": "Como Funciona?",
     "how_text": "A Formula Student é a maior competição de engenharia do mundo para estudantes universitários. As equipas projetam e constroem um carro de corrida e são avaliadas em eventos estáticos e dinâmicos.",
     "static_events": "Eventos Estáticos",
@@ -68,7 +68,11 @@
     "power": "Potência",
     "torque": "Binário",
     "battery": "Bateria",
-    "no_photos": "Fotos em breve"
+    "no_photos": "Fotos em breve",
+    "fsnovaev01_subtitle": "O nosso primeiro veículo elétrico",
+    "fsfenixevo_subtitle": "Evolução da plataforma Fenix",
+    "fsfenix_subtitle": "Renascendo das cinzas",
+    "fsdragon_subtitle": "Onde tudo começou"
   },
   "partners": {
     "title": "Parceiros",

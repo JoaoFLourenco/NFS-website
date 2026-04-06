@@ -91,7 +91,7 @@ export default function HomePage() {
           <FadeIn direction="left" delay={0.15}>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border">
               <Image
-                src="/images/placeholder-team.svg"
+                src="/images/team/team_photo_2025.jpg"
                 alt="Nova Formula Student Team"
                 fill
                 className="object-cover"

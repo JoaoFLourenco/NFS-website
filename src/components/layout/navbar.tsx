@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/navigation";
@@ -51,9 +52,13 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="font-heading text-lg font-bold tracking-widest text-gradient">
-            NFS
-          </span>
+          <Image
+            src="/images/logoBranco.svg"
+            alt="NFS Logo"
+            width={32}
+            height={32}
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}

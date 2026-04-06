@@ -5,9 +5,9 @@ export const cars: Car[] = [
     slug: "fsnovaev01",
     name: "FS NOVA EV01",
     year: 2024,
-    subtitle: "Our first electric vehicle",
+    subtitleKey: "fsnovaev01_subtitle",
     accentColor: "#19a3ff",
-    heroImage: "/images/cars/placeholder-car.svg",
+    heroImage: "/images/cars/EV01Render.png",
     specCategories: [
       {
         name: "General",
@@ -64,9 +64,9 @@ export const cars: Car[] = [
     slug: "fsfenixevo",
     name: "FS Fenix Evo",
     year: 2023,
-    subtitle: "Evolution of the Fenix platform",
+    subtitleKey: "fsfenixevo_subtitle",
     accentColor: "#1966ff",
-    heroImage: "/images/cars/placeholder-car.svg",
+    heroImage: "/images/cars/fenixEvoRender.png",
     specCategories: [
       {
         name: "General",
@@ -99,9 +99,9 @@ export const cars: Car[] = [
     slug: "fsfenix",
     name: "FS Fenix",
     year: 2022,
-    subtitle: "Rising from the ashes",
+    subtitleKey: "fsfenix_subtitle",
     accentColor: "#19a3ff",
-    heroImage: "/images/cars/placeholder-car.svg",
+    heroImage: "/images/cars/fenixRender.png",
     specCategories: [
       {
         name: "General",
@@ -128,9 +128,9 @@ export const cars: Car[] = [
     slug: "fsdragon",
     name: "FS Dragon",
     year: 2019,
-    subtitle: "Where it all began",
+    subtitleKey: "fsdragon_subtitle",
     accentColor: "#19ff38",
-    heroImage: "/images/cars/placeholder-car.svg",
+    heroImage: "/images/cars/dragonRender.png",
     specCategories: [
       {
         name: "General",

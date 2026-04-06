@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Separator } from "@/components/ui/separator";
@@ -43,9 +44,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <span className="font-heading text-xl font-bold tracking-widest text-gradient">
-              NFS
-            </span>
+            <Image
+              src="/images/logoBranco.svg"
+              alt="NFS Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Nova Formula Student — FCT NOVA
             </p>

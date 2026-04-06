@@ -96,13 +96,7 @@ export default function PartnersPage() {
                       </h3>
                       <div className="flex-1 h-px bg-border" />
                     </div>
-                    <div
-                      className={`grid gap-4 ${
-                        tier === "institutional" || tier === "gold"
-                          ? "grid-cols-2 md:grid-cols-3"
-                          : "grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
-                      }`}
-                    >
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                       {tierPartners.map((partner) => (
                         <div
                           key={partner.name}

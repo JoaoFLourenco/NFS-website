@@ -8,6 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+
 
 const staticEvents = [
   { key: "business_plan", points: 75 },

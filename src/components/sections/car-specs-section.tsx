@@ -39,18 +39,18 @@ export function CarSpecsSection({ car }: CarSpecsSectionProps) {
                 style={{ color: car.accentColor }}
               />
             </div>
-            <div className="space-y-2">
-              {category.specs.slice(0, 3).map((spec) => (
-                <div key={spec.label} className="flex justify-between items-baseline gap-4">
-                  <span className="text-xs text-muted-foreground truncate">{spec.label}</span>
-                  <span className="text-sm font-medium font-mono text-foreground shrink-0">
+            <div className="space-y-3">
+              {category.specs.slice(0, 2).map((spec) => (
+                <div key={spec.label} className="space-y-1">
+                  <p className="text-xs font-medium text-muted-foreground">{spec.label}</p>
+                  <p className="text-sm font-medium font-mono text-foreground break-words">
                     {spec.value}
-                  </span>
+                  </p>
                 </div>
               ))}
-              {category.specs.length > 3 && (
+              {category.specs.length > 2 && (
                 <p className="text-xs text-muted-foreground pt-1">
-                  +{category.specs.length - 3} more
+                  +{category.specs.length - 2} more
                 </p>
               )}
             </div>

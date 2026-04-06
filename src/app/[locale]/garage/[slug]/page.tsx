@@ -9,7 +9,12 @@ import { ChevronLeft } from "lucide-react";
 import type { Car } from "@/lib/types/car";
 
 export async function generateStaticParams() {
-  return getCarSlugs().map((slug) => ({ slug }));
+  const locales = ["pt", "en"];
+  const slugs = getCarSlugs();
+
+  return locales.flatMap((locale) =>
+    slugs.map((slug) => ({ locale, slug }))
+  );
 }
 
 export default async function CarDetailPage({

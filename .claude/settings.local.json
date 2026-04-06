@@ -16,7 +16,12 @@
       "Bash(grep -A 5 '\"\"dev\"\"' package.json)",
       "Bash(netstat -ano)",
       "Bash(xargs -I {} taskkill /PID {} /F)",
-      "Bash(taskkill /PID 20076 /F)"
+      "Bash(taskkill /PID 20076 /F)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(head -20 src/app/[locale]/garage/[slug]/page.tsx)",
+      "Bash(grep -A 5 \"generateStaticParams\" src/app/[locale]/garage/[slug]/page.tsx)",
+      "Bash(grep -B 2 -A 5 \"generateStaticParams\" src/app/[locale]/garage/page.tsx)"
     ]
   }
 }

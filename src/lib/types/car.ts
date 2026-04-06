@@ -6,6 +6,7 @@ export interface CarSpec {
 export interface CarSpecCategory {
   name: string;
   translationKey: string;
+  description: string;
   specs: CarSpec[];
 }
 

@@ -12,7 +12,10 @@
       "Bash(npx shadcn@latest init -d --base-color zinc)",
       "Bash(npx shadcn@latest init -d)",
       "Bash(npx shadcn@latest add card dialog accordion sheet badge separator navigation-menu -y)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -A 5 '\"\"dev\"\"' package.json)",
+      "Bash(netstat -ano)",
+      "Bash(xargs -I {} taskkill /PID {} /F)"
     ]
   }
 }

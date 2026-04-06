@@ -61,7 +61,10 @@ export function CarSpecsSection({ car }: CarSpecsSectionProps) {
                 {t(category.translationKey as never)}
               </DialogTitle>
             </DialogHeader>
-            <div className="space-y-3 mt-2">
+            <p className="text-sm text-muted-foreground mt-2 mb-4">
+              {category.description}
+            </p>
+            <div className="space-y-3">
               {category.specs.map((spec) => (
                 <div
                   key={spec.label}

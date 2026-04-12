@@ -47,21 +47,43 @@ export default function PartnersPage() {
               {t("why_title")}
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
             {perks.map(({ icon: Icon, key }, i) => (
-              <FadeIn key={key} delay={i * 0.08}>
-                <div className="rounded-xl border border-border bg-card p-6 space-y-3 hover:border-[#19a3ff]/30 transition-colors">
+              <FadeIn key={key} delay={i * 0.08} className="h-full">
+                <div className="h-full rounded-xl border border-border bg-card p-6 flex flex-col gap-3 hover:border-[#19a3ff]/30 transition-colors">
                   <div className="p-2.5 rounded-lg bg-[#19a3ff]/10 w-fit">
                     <Icon className="h-5 w-5 text-[#19a3ff]" />
                   </div>
                   <h3 className="font-medium text-sm text-foreground">{t(key)}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
+                  <p className="text-xs text-muted-foreground leading-relaxed flex-1">
                     {t(`${key}_desc` as never)}
                   </p>
                 </div>
               </FadeIn>
             ))}
           </div>
+
+          {/* Brands on car */}
+          <FadeIn className="mt-12">
+            <h3 className="font-heading text-lg font-bold tracking-wide text-foreground text-center mb-6">
+              {t("brands_on_car")}
+            </h3>
+            <div className="grid grid-cols-3 grid-rows-2 gap-4">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border bg-card"
+                >
+                  <Image
+                    src={`/images/partners/car_brands_${i + 1}.jpg`}
+                    alt={`Brands on car ${i + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </FadeIn>
         </section>
 
         {/* CTA */}

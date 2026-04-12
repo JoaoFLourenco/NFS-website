@@ -3,10 +3,18 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { getCarBySlug, getCarSlugs } from "@/lib/services/cars.service";
 import { CarSpecsSection } from "@/components/sections/car-specs-section";
+import { TeamSection } from "@/components/sections/team-section";
 import { FadeIn } from "@/components/sections/fade-in";
 import { Link } from "@/i18n/navigation";
 import { ChevronLeft } from "lucide-react";
+import { ev01Teams, fenixEvoTeams } from "@/lib/data/teams";
 import type { Car } from "@/lib/types/car";
+import type { TeamSeason } from "@/lib/data/teams";
+
+const teamsByCar: Record<string, TeamSeason[]> = {
+  fsnovaev01: ev01Teams,
+  fsfenixevo: fenixEvoTeams,
+};
 
 export async function generateStaticParams() {
   const locales = ["pt", "en"];
@@ -25,10 +33,11 @@ export default async function CarDetailPage({
   const { slug } = await params;
   const car = getCarBySlug(slug);
   if (!car) notFound();
-  return <CarDetailContent car={car} />;
+  const teams = teamsByCar[slug] ?? null;
+  return <CarDetailContent car={car} teams={teams} />;
 }
 
-function CarDetailContent({ car }: { car: Car }) {
+function CarDetailContent({ car, teams }: { car: Car; teams: TeamSeason[] | null }) {
   const t = useTranslations("garage");
 
   return (
@@ -83,6 +92,22 @@ function CarDetailContent({ car }: { car: Car }) {
           <CarSpecsSection car={car} />
         </div>
       </section>
+
+      {/* Team */}
+      {teams && (
+        <section className="py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <FadeIn className="mb-10">
+              <h2 className="font-heading text-2xl font-bold tracking-wide text-gradient">
+                {t("team")}
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <TeamSection seasons={teams} />
+            </FadeIn>
+          </div>
+        </section>
+      )}
 
       {/* Gallery placeholder */}
       <section className="py-16 px-4 bg-card/30">

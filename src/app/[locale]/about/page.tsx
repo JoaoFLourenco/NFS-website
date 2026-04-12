@@ -47,8 +47,14 @@ export default function AboutPage() {
 
         {/* Team photo */}
         <FadeIn>
-          <div className="rounded-2xl overflow-hidden border border-border aspect-[21/9] bg-card flex items-center justify-center">
-            <p className="text-muted-foreground text-sm">Team photo coming soon</p>
+          <div className="rounded-2xl overflow-hidden border border-border">
+            <Image
+              src="/images/team/org_chart_2526.png"
+              alt="NFS Team Organisation Chart 25/26"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+            />
           </div>
         </FadeIn>
 

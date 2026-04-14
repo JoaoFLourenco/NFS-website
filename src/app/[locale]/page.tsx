@@ -28,7 +28,7 @@ export default function HomePage() {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <FadeIn delay={0.1}>
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#19a3ff] mb-4">
+            <p className="text-lg font-medium uppercase tracking-[0.3em] text-[#19a3ff] mb-4">
               FCT NOVA
             </p>
           </FadeIn>

@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import type { TeamSeason, TeamRole } from "@/lib/data/teams";
+import Image from "next/image";
+import { X } from "lucide-react";
+import type { TeamSeason, TeamRole, TeamGroup } from "@/lib/data/teams";
 
 interface TeamSectionProps {
   seasons: TeamSeason[];
@@ -19,11 +21,51 @@ const roleBadgeClass: Record<TeamRole, string> = {
   "cost":                      "bg-rose-500/20 text-rose-300 border-rose-500/30",
 };
 
+function MemberCard({ member, t }: { member: TeamGroup["members"][number]; t: ReturnType<typeof useTranslations<"garage">> }) {
+  return (
+    <div className="flex flex-col items-center gap-2 text-center">
+      <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-border bg-card shrink-0">
+        {member.imageSrc ? (
+          <Image
+            src={member.imageSrc}
+            alt={member.name}
+            fill
+            className="object-cover"
+            sizes="80px"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-muted">
+            <svg viewBox="0 0 80 80" className="w-10 h-10 text-muted-foreground" fill="none">
+              <circle cx="40" cy="30" r="14" stroke="currentColor" strokeWidth="2.5" />
+              <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+            </svg>
+          </div>
+        )}
+      </div>
+      <div className="space-y-1">
+        <p className="text-sm font-medium text-foreground leading-tight">{member.name}</p>
+        {member.role !== "member" && (
+          <span className={`inline-block text-[10px] font-medium px-2 py-0.5 rounded-full border ${roleBadgeClass[member.role]}`}>
+            {t(`role_${member.role.replace(/-/g, "_")}` as never)}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function TeamSection({ seasons }: TeamSectionProps) {
   const t = useTranslations("garage");
   const [activeSeason, setActiveSeason] = useState(seasons[seasons.length - 1].seasonLabel);
+  const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
 
   const season = seasons.find((s) => s.seasonLabel === activeSeason) ?? seasons[seasons.length - 1];
+
+  function handleGroupClick(title: string) {
+    setExpandedGroup((prev) => (prev === title ? null : title));
+  }
+
+  const expanded = season.groups.find((g) => g.title === expandedGroup);
 
   return (
     <div className="space-y-8">
@@ -35,7 +77,7 @@ export function TeamSection({ seasons }: TeamSectionProps) {
         {seasons.map((s) => (
           <button
             key={s.seasonLabel}
-            onClick={() => setActiveSeason(s.seasonLabel)}
+            onClick={() => { setActiveSeason(s.seasonLabel); setExpandedGroup(null); }}
             className={`px-4 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
               activeSeason === s.seasonLabel
                 ? "bg-[#19a3ff] border-[#19a3ff] text-white"
@@ -49,31 +91,69 @@ export function TeamSection({ seasons }: TeamSectionProps) {
 
       {/* Groups grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {season.groups.map((group) => (
-          <div
-            key={group.title}
-            className="rounded-xl border border-border bg-card p-5 space-y-3"
-          >
-            <h4 className="font-heading text-xs font-bold uppercase tracking-[0.2em] text-[#19a3ff]">
-              {t(`dept_${group.title.replace(/-/g, "_")}` as never)}
-            </h4>
-            <ul className="space-y-2">
-              {group.members.map((member) => (
-                <li key={member.name} className="flex items-center justify-between gap-2">
-                  <span className="text-sm text-foreground">{member.name}</span>
-                  {member.role !== "member" && (
-                    <span
-                      className={`shrink-0 text-[10px] font-medium px-2 py-0.5 rounded-full border ${roleBadgeClass[member.role]}`}
-                    >
-                      {t(`role_${member.role.replace(/-/g, "_")}` as never)}
-                    </span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {season.groups.map((group) => {
+          const isExpanded = expandedGroup === group.title;
+          return (
+            <button
+              key={group.title}
+              onClick={() => handleGroupClick(group.title)}
+              className={`text-left rounded-xl border p-5 space-y-3 transition-all duration-200 w-full ${
+                isExpanded
+                  ? "border-[#19a3ff]/60 bg-[#19a3ff]/5"
+                  : "border-border bg-card hover:border-[#19a3ff]/30"
+              }`}
+            >
+              <div className="flex items-center justify-between">
+                <h4 className="font-heading text-xs font-bold uppercase tracking-[0.2em] text-[#19a3ff]">
+                  {t(`dept_${group.title.replace(/-/g, "_")}` as never)}
+                </h4>
+                <span className="text-xs text-muted-foreground">
+                  {group.members.length} {group.members.length === 1 ? "member" : "members"}
+                </span>
+              </div>
+              <ul className="space-y-2">
+                {group.members.slice(0, 4).map((member) => (
+                  <li key={member.name} className="flex items-center justify-between gap-2">
+                    <span className="text-sm text-foreground truncate">{member.name}</span>
+                    {member.role !== "member" && (
+                      <span className={`shrink-0 text-[10px] font-medium px-2 py-0.5 rounded-full border ${roleBadgeClass[member.role]}`}>
+                        {t(`role_${member.role.replace(/-/g, "_")}` as never)}
+                      </span>
+                    )}
+                  </li>
+                ))}
+                {group.members.length > 4 && (
+                  <li className="text-xs text-muted-foreground">+{group.members.length - 4} more</li>
+                )}
+              </ul>
+            </button>
+          );
+        })}
       </div>
+
+      {/* Expanded department panel */}
+      {expanded && (
+        <div className="rounded-2xl border border-[#19a3ff]/30 bg-card overflow-hidden">
+          {/* Header */}
+          <div className="flex items-center justify-between px-6 py-4 border-b border-border">
+            <h3 className="font-heading text-lg font-bold tracking-wide text-gradient">
+              {t(`dept_${expanded.title.replace(/-/g, "_")}` as never)}
+            </h3>
+            <button
+              onClick={() => setExpandedGroup(null)}
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+          {/* Member photo grid */}
+          <div className="p-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
+            {expanded.members.map((member) => (
+              <MemberCard key={member.name} member={member} t={t} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

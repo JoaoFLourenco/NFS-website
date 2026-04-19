@@ -78,6 +78,7 @@ export default function PartnersPage() {
                     src={`/images/partners/car_brands_${i + 1}.jpg`}
                     alt={`Brands on car ${i + 1}`}
                     fill
+                    unoptimized
                     className="object-cover"
                   />
                 </div>

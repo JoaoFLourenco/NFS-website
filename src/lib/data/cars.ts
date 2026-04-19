@@ -4,7 +4,7 @@ export const cars: Car[] = [
   {
     slug: "fsnovaev01",
     name: "FS NOVA EV01",
-    year: 2024,
+    year: "2025-2026",
     subtitleKey: "fsnovaev01_subtitle",
     accentColor: "#19a3ff",
     heroImage: "/images/cars/EV01Render.png",
@@ -72,7 +72,7 @@ export const cars: Car[] = [
   {
     slug: "fsfenixevo",
     name: "FS Fenix Evo",
-    year: 2023,
+    year: "2024-2025",
     subtitleKey: "fsfenixevo_subtitle",
     accentColor: "#1966ff",
     heroImage: "/images/cars/fenixEvoRender.png",
@@ -135,7 +135,7 @@ export const cars: Car[] = [
   {
     slug: "fsfenix",
     name: "FS Fenix",
-    year: 2022,
+    year: "2022-2023",
     subtitleKey: "fsfenix_subtitle",
     accentColor: "#19a3ff",
     heroImage: "/images/cars/fenixRender.png",
@@ -202,7 +202,7 @@ export const cars: Car[] = [
   {
     slug: "fsdragon",
     name: "FS Dragon",
-    year: 2019,
+    year: "2019",
     subtitleKey: "fsdragon_subtitle",
     accentColor: "#19ff38",
     heroImage: "/images/cars/dragonRender.png",

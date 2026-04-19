@@ -33,7 +33,7 @@ export default function HomePage() {
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-bold tracking-wider text-gradient leading-tight">
+            <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-bold tracking-wider text-white leading-tight">
               {t("home.hero_title")}
             </h1>
           </FadeIn>

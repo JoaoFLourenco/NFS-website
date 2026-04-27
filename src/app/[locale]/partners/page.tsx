@@ -3,7 +3,9 @@ import Image from "next/image";
 import { PageHeader } from "@/components/sections/page-header";
 import { FadeIn } from "@/components/sections/fade-in";
 import { Separator } from "@/components/ui/separator";
+import { SponsorsSection } from "@/components/sections/sponsors-section";
 import { getAllPartners, getPartnerTiers } from "@/lib/services/partners.service";
+import { allSponsors } from "@/lib/data/sponsor-data";
 import type { PartnerTier } from "@/lib/types/partner";
 import {
   Eye,
@@ -157,6 +159,14 @@ export default function PartnersPage() {
               );
             })}
         </section>
+
+        <Separator className="bg-border my-16" />
+
+        {/* All current sponsors */}
+        <SponsorsSection
+          sponsors={allSponsors}
+          title={t("all_sponsors")}
+        />
       </div>
     </div>
   );

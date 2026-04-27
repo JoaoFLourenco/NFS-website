@@ -4,10 +4,12 @@ import Image from "next/image";
 import { getCarBySlug, getCarSlugs } from "@/lib/services/cars.service";
 import { CarSpecsSection } from "@/components/sections/car-specs-section";
 import { TeamSection } from "@/components/sections/team-section";
+import { SponsorsSection } from "@/components/sections/sponsors-section";
 import { FadeIn } from "@/components/sections/fade-in";
 import { Link } from "@/i18n/navigation";
 import { ChevronLeft } from "lucide-react";
 import { ev01Teams, fenixEvoTeams } from "@/lib/data/teams";
+import { getSponsorsForCar } from "@/lib/data/sponsor-data";
 import type { Car } from "@/lib/types/car";
 import type { TeamSeason } from "@/lib/data/teams";
 
@@ -34,10 +36,19 @@ export default async function CarDetailPage({
   const car = getCarBySlug(slug);
   if (!car) notFound();
   const teams = teamsByCar[slug] ?? null;
-  return <CarDetailContent car={car} teams={teams} />;
+  const sponsors = getSponsorsForCar(slug);
+  return <CarDetailContent car={car} teams={teams} sponsors={sponsors} />;
 }
 
-function CarDetailContent({ car, teams }: { car: Car; teams: TeamSeason[] | null }) {
+function CarDetailContent({
+  car,
+  teams,
+  sponsors,
+}: {
+  car: Car;
+  teams: TeamSeason[] | null;
+  sponsors: typeof import("@/lib/data/sponsor-data").ev01Sponsors;
+}) {
   const t = useTranslations("garage");
 
   return (
@@ -108,6 +119,9 @@ function CarDetailContent({ car, teams }: { car: Car; teams: TeamSeason[] | null
           </div>
         </section>
       )}
+
+      {/* Sponsors */}
+      {sponsors.length > 0 && <SponsorsSection sponsors={sponsors} />}
 
       {/* Gallery placeholder */}
       <section className="py-16 px-4 bg-card/30">

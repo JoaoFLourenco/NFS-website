@@ -107,58 +107,7 @@ export default function PartnersPage() {
         <Separator className="bg-border" />
 
         {/* Partner tiers */}
-        <section className="space-y-16">
-          {tierOrder
-            .filter((tier) => activeTiers.includes(tier))
-            .map((tier, ti) => {
-              const tierPartners = allPartners.filter((p) => p.tier === tier);
-              return (
-                <FadeIn key={tier} delay={ti * 0.08}>
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <h3 className="font-heading text-lg font-bold tracking-widest text-gradient uppercase">
-                        {t(tier)}
-                      </h3>
-                      <div className="flex-1 h-px bg-border" />
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                      {tierPartners.map((partner) => (
-                        <div
-                          key={partner.name}
-                          className="group rounded-xl border border-border bg-card p-4 flex items-center justify-center aspect-[2/1] hover:border-border/80 transition-colors"
-                        >
-                          {partner.link ? (
-                            <a
-                              href={partner.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="w-full h-full flex items-center justify-center"
-                            >
-                              <Image
-                                src={partner.imageUrl}
-                                alt={partner.name}
-                                width={120}
-                                height={60}
-                                className="object-contain max-h-12 opacity-70 group-hover:opacity-100 transition-opacity"
-                              />
-                            </a>
-                          ) : (
-                            <Image
-                              src={partner.imageUrl}
-                              alt={partner.name}
-                              width={120}
-                              height={60}
-                              className="object-contain max-h-12 opacity-70 group-hover:opacity-100 transition-opacity"
-                            />
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </FadeIn>
-              );
-            })}
-        </section>
+        
 
         <Separator className="bg-border my-16" />
 

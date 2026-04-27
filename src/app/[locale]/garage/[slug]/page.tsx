@@ -120,9 +120,6 @@ function CarDetailContent({
         </section>
       )}
 
-      {/* Sponsors */}
-      {sponsors.length > 0 && <SponsorsSection sponsors={sponsors} />}
-
       {/* Gallery placeholder */}
       <section className="py-16 px-4 bg-card/30">
         <div className="max-w-7xl mx-auto">
@@ -151,6 +148,10 @@ function CarDetailContent({
           </FadeIn>
         </div>
       </section>
+
+      {/* Sponsors */}
+      {sponsors.length > 0 && <SponsorsSection sponsors={sponsors} />}
+      
     </div>
   );
 }

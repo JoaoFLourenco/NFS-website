@@ -121,8 +121,9 @@
     "silver": "Prata",
     "bronze": "Bronze",
     "software": "Software",
-    "partner": "Parceiro",
-    "brands_on_car": "Marcas no Nosso Carro"
+    "partner": "Parceiros",
+    "brands_on_car": "Marcas no Nosso Carro",
+    "all_sponsors": "Patrocinadores Atuais"
   },
   "contacts": {
     "title": "Contactos",

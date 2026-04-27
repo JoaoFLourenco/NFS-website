@@ -19,6 +19,7 @@ const tierOrder: PartnerTier[] = [
 
 export function SponsorsSection({ sponsors, title }: SponsorsSectionProps) {
   const t = useTranslations("garage");
+  const tPartners = useTranslations("partners");
 
   const grouped = sponsors.reduce(
     (acc, sponsor) => {
@@ -45,7 +46,7 @@ export function SponsorsSection({ sponsors, title }: SponsorsSectionProps) {
             <FadeIn key={tier} delay={ti * 0.08}>
               <div className="space-y-4">
                 <h3 className="font-heading text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                  {t(tier)}
+                  {tPartners(tier)}
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                   {grouped[tier].map((sponsor) => (

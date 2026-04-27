@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation";
 import { ChevronLeft } from "lucide-react";
 import { ev01Teams, fenixEvoTeams } from "@/lib/data/teams";
 import { getSponsorsForCar } from "@/lib/data/sponsor-data";
-import { getCompetitionsForCar } from "@/lib/data/competitions";
+import { getCompetitionsForCar, type Competition } from "@/lib/data/competitions";
 import type { Car } from "@/lib/types/car";
 import type { TeamSeason } from "@/lib/data/teams";
 
@@ -52,7 +52,7 @@ function CarDetailContent({
   car: Car;
   teams: TeamSeason[] | null;
   sponsors: typeof import("@/lib/data/sponsor-data").ev01Sponsors;
-  competitions: typeof import("@/lib/data/competitions").ev01Competitions.competitions;
+  competitions: Competition[];
 }) {
   const t = useTranslations("garage");
 

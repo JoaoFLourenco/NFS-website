@@ -5,11 +5,13 @@ import { getCarBySlug, getCarSlugs } from "@/lib/services/cars.service";
 import { CarSpecsSection } from "@/components/sections/car-specs-section";
 import { TeamSection } from "@/components/sections/team-section";
 import { SponsorsSection } from "@/components/sections/sponsors-section";
+import { CompetitionsSection } from "@/components/sections/competitions-section";
 import { FadeIn } from "@/components/sections/fade-in";
 import { Link } from "@/i18n/navigation";
 import { ChevronLeft } from "lucide-react";
 import { ev01Teams, fenixEvoTeams } from "@/lib/data/teams";
 import { getSponsorsForCar } from "@/lib/data/sponsor-data";
+import { getCompetitionsForCar } from "@/lib/data/competitions";
 import type { Car } from "@/lib/types/car";
 import type { TeamSeason } from "@/lib/data/teams";
 
@@ -37,17 +39,20 @@ export default async function CarDetailPage({
   if (!car) notFound();
   const teams = teamsByCar[slug] ?? null;
   const sponsors = getSponsorsForCar(slug);
-  return <CarDetailContent car={car} teams={teams} sponsors={sponsors} />;
+  const competitions = getCompetitionsForCar(slug);
+  return <CarDetailContent car={car} teams={teams} sponsors={sponsors} competitions={competitions} />;
 }
 
 function CarDetailContent({
   car,
   teams,
   sponsors,
+  competitions,
 }: {
   car: Car;
   teams: TeamSeason[] | null;
   sponsors: typeof import("@/lib/data/sponsor-data").ev01Sponsors;
+  competitions: typeof import("@/lib/data/competitions").ev01Competitions.competitions;
 }) {
   const t = useTranslations("garage");
 
@@ -103,6 +108,9 @@ function CarDetailContent({
           <CarSpecsSection car={car} />
         </div>
       </section>
+
+      {/* Competitions */}
+      {competitions.length > 0 && <CompetitionsSection competitions={competitions} />}
 
       {/* Team */}
       {teams && (

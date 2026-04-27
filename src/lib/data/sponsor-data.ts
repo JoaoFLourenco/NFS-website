@@ -71,7 +71,7 @@ export const ev01Sponsors: Partner[] = [
 
   // Silver
   {
-    name: "Althima & Altair",
+    name: "Althima",
     imageUrl: getSupabaseImageUrl("ev01/silver/althima.svg"),
     link: "https://althima.com/",
     tier: "silver",
@@ -101,7 +101,7 @@ export const ev01Sponsors: Partner[] = [
     tier: "silver",
   },
 
-  // Bronze (selected)
+  // Bronze
   {
     name: "About Energy",
     imageUrl: getSupabaseImageUrl("ev01/bronze/about-energy.png"),
@@ -114,6 +114,78 @@ export const ev01Sponsors: Partner[] = [
     link: "https://www.alphayate.com/",
     tier: "bronze",
   },
+  {
+    name: "BLOCKS",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/blocks.png"),
+    link: "https://blockstec.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Coficab",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/coficab.png"),
+    link: "https://www.coficab.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Fibran",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/fibran.png"),
+    link: "https://fibran.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "KIP",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/kip.png"),
+    link: "https://kip.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Loctite",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/loctite.png"),
+    link: "https://www.loctiteproducts.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Mauser",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/mauser.png"),
+    link: "https://mauser.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Maxiarte",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/maxiarte.png"),
+    link: "https://www.maxiarte.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Norelem",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/norelem.png"),
+    link: "https://norelem.es/pt",
+    tier: "bronze",
+  },
+  {
+    name: "TE",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/te.png"),
+    link: "https://www.te.com/pt/home.html",
+    tier: "bronze",
+  },
+  {
+    name: "TELLES",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/telles.png"),
+    link: "https://www.telles.pt/pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Vector",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/vector.png"),
+    link: "https://www.vector.com/int/en/",
+    tier: "bronze",
+  },
+  {
+    name: "Würth",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/wurth.png"),
+    link: "https://eshop.wurth.pt/pt/PT/EUR/",
+    tier: "bronze",
+  },
 
   // Partner (Software)
   {
@@ -123,9 +195,45 @@ export const ev01Sponsors: Partner[] = [
     tier: "partner",
   },
   {
+    name: "IPG Software",
+    imageUrl: getSupabaseImageUrl("ev01/partner/ipg.svg"),
+    link: "https://www.ipg-automotive.com/",
+    tier: "partner",
+  },
+  {
     name: "MATHWORKS",
     imageUrl: getSupabaseImageUrl("ev01/partner/mathworks.png"),
     link: "https://www.mathworks.com/",
+    tier: "partner",
+  },
+  {
+    name: "Rapid Harness",
+    imageUrl: getSupabaseImageUrl("ev01/partner/rapid-harness.png"),
+    link: "https://rapidharness.com/",
+    tier: "partner",
+  },
+  {
+    name: "SolidWorks",
+    imageUrl: getSupabaseImageUrl("ev01/partner/solidworks.svg"),
+    link: "https://www.solidworks.com/",
+    tier: "partner",
+  },
+  {
+    name: "TESLA",
+    imageUrl: getSupabaseImageUrl("ev01/partner/tesla.png"),
+    link: "https://www.tesla.com/",
+    tier: "partner",
+  },
+  {
+    name: "Trigenius",
+    imageUrl: getSupabaseImageUrl("ev01/partner/trigenius.svg"),
+    link: "https://trigenius.pt/",
+    tier: "partner",
+  },
+  {
+    name: "VI-Grade",
+    imageUrl: getSupabaseImageUrl("ev01/partner/vi-grade.jpg"),
+    link: "https://www.vi-grade.com",
     tier: "partner",
   },
 ];
@@ -139,15 +247,9 @@ export const fenixEvoSponsors: Partner[] = [
     tier: "institutional",
   },
   {
-    name: "NOVA SST",
+    name: "FCT",
     imageUrl: getSupabaseImageUrl("fenixevo/institutional/nova-sst.png"),
     link: "https://www.fct.unl.pt/",
-    tier: "institutional",
-  },
-  {
-    name: "AEFCT",
-    imageUrl: getSupabaseImageUrl("fenixevo/institutional/aefct.png"),
-    link: "https://ae.fct.unl.pt/",
     tier: "institutional",
   },
   {
@@ -160,6 +262,12 @@ export const fenixEvoSponsors: Partner[] = [
     name: "DEEC",
     imageUrl: getSupabaseImageUrl("fenixevo/institutional/deec.png"),
     link: "https://www.dee.fct.unl.pt/",
+    tier: "institutional",
+  },
+  {
+    name: "AEFCT",
+    imageUrl: getSupabaseImageUrl("fenixevo/institutional/aefct.png"),
+    link: "https://ae.fct.unl.pt/",
     tier: "institutional",
   },
 
@@ -222,7 +330,7 @@ export const fenixEvoSponsors: Partner[] = [
   },
   {
     name: "Leomavel",
-    imageUrl: getSupabaseImageUrl("fenixevo/silver/leomavel.jpg"),
+    imageUrl: getSupabaseImageUrl("fenixevo/silver/leomavel.png"),
     link: "https://leomavel.pt/",
     tier: "silver",
   },
@@ -244,14 +352,207 @@ export const fenixEvoSponsors: Partner[] = [
     link: "https://www.visteon.com/",
     tier: "silver",
   },
+
+  // Bronze
+  {
+    name: "3DISO",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/3diso.png"),
+    link: "https://www.3d-iso.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Alphayate",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/alphayate.png"),
+    link: "https://www.alphayate.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Altium",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/altium.png"),
+    link: "https://www.altium.com/altium-designer",
+    tier: "bronze",
+  },
+  {
+    name: "AMtita",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/amtita.jpg"),
+    link: "https://www.amtita.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "BLOCKS",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/blocks.png"),
+    link: "https://blockstec.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Coficab",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/coficab.png"),
+    link: "https://www.coficab.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "CortePratico",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/corte-pratico.png"),
+    link: "https://cortepratico.pt/site/",
+    tier: "bronze",
+  },
+  {
+    name: "DFC Turbo",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/dfc-turbo.png"),
+    link: "https://dfcturbo.com/",
+    tier: "bronze",
+  },
+  {
+    name: "EXIDE",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/exide.svg"),
+    link: "https://www.exidegroup.com/eu/pt",
+    tier: "bronze",
+  },
+  {
+    name: "Fibran",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/fibran.png"),
+    link: "https://fibran.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Fresatudo",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/fresatudo.jpg"),
+    link: "https://www.fresatudo.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "KFRIO",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/kfrio.png"),
+    link: "https://kfrio.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "KIP",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/kip.png"),
+    link: "https://kip.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "M3T",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/m3t.jpg"),
+    link: "https://m3t.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "MATHWORKS",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/mathworks.png"),
+    link: "https://www.mathworks.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Maxiarte",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/maxiarte.png"),
+    link: "https://www.maxiarte.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "MCoutinho",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/mcoutinho.jpg"),
+    link: "https://www.mcoutinho.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "NDTuned",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/ndtuned.png"),
+    link: "https://www.ndtuned.com/",
+    tier: "bronze",
+  },
+  {
+    name: "NGK",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/ngk.svg"),
+    link: "https://ngksparkplugs.com/en/",
+    tier: "bronze",
+  },
+  {
+    name: "NITERRA",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/niterra.png"),
+    link: "https://www.ngkntk.com/pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Norelem",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/norelem.png"),
+    link: "https://norelem.es/pt",
+    tier: "bronze",
+  },
+  {
+    name: "PROSeat",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/proseat.png"),
+    link: "https://proseat.eu/",
+    tier: "bronze",
+  },
+  {
+    name: "RamadaAcos",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/ramada-acos.png"),
+    link: "https://www.ramada.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "TeixeiraDuarte",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/teixeira-duarte.png"),
+    link: "https://www.tdgiworld.com/",
+    tier: "bronze",
+  },
+  {
+    name: "ZDK",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/zdk.svg"),
+    link: "https://www.zdkmotorsport.com/",
+    tier: "bronze",
+  },
+
+  // Partner (Software)
+  {
+    name: "IPG Software",
+    imageUrl: getSupabaseImageUrl("fenixevo/partner/ipg.svg"),
+    link: "https://www.ipg-automotive.com/",
+    tier: "partner",
+  },
+  {
+    name: "SolidWorks",
+    imageUrl: getSupabaseImageUrl("fenixevo/partner/solidworks.svg"),
+    link: "https://www.solidworks.com/",
+    tier: "partner",
+  },
 ];
 
-/** All unique sponsors across both projects */
-export const allSponsors: Partner[] = Array.from(
-  new Map(
-    [...ev01Sponsors, ...fenixEvoSponsors].map((s) => [s.name, s])
-  ).values()
-).sort((a, b) => a.name.localeCompare(b.name));
+/** All unique sponsors across both projects (deduplicated by name) */
+export const allSponsors: Partner[] = (() => {
+  const institutional_order = [
+    "NOVA University",
+    "FCT",
+    "NOVA",
+    "DEMI",
+    "DEEC",
+    "AEFCT",
+  ];
+
+  const unique = Array.from(
+    new Map(
+      [...ev01Sponsors, ...fenixEvoSponsors].map((s) => [s.name, s])
+    ).values()
+  );
+
+  return unique.sort((a, b) => {
+    // Institutional sponsors use custom order
+    if (a.tier === "institutional" && b.tier === "institutional") {
+      const aIndex = institutional_order.indexOf(a.name);
+      const bIndex = institutional_order.indexOf(b.name);
+      return aIndex - bIndex;
+    }
+    // Other tiers sort alphabetically
+    if (a.tier === b.tier) {
+      return a.name.localeCompare(b.name);
+    }
+    // Different tiers sort by tier order
+    const tierOrder = ["institutional", "gold", "silver", "bronze", "partner"];
+    return tierOrder.indexOf(a.tier) - tierOrder.indexOf(b.tier);
+  });
+})();
 
 export function getSponsorsForCar(carSlug: string): Partner[] {
   switch (carSlug) {

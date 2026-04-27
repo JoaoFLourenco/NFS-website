@@ -46,13 +46,13 @@ export function SponsorsSection({ sponsors, title }: SponsorsSectionProps) {
             <FadeIn key={tier} delay={ti * 0.08}>
               <div className="space-y-4">
                 <h3 className="font-heading text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                  {tPartners(tier)}
+                  {tier}
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                   {grouped[tier].map((sponsor) => (
                     <div
                       key={sponsor.name}
-                      className="group rounded-lg border border-border bg-card p-3 flex items-center justify-center aspect-[3/2] hover:border-[#19a3ff]/30 transition-colors"
+                      className="group rounded-lg border border-gray-200 bg-white p-3 flex items-center justify-center aspect-[3/2] hover:border-[#19a3ff]/50 hover:shadow-md transition-all"
                     >
                       {sponsor.link ? (
                         <a
@@ -65,18 +65,18 @@ export function SponsorsSection({ sponsors, title }: SponsorsSectionProps) {
                           <Image
                             src={sponsor.imageUrl}
                             alt={sponsor.name}
-                            width={100}
-                            height={60}
-                            className="object-contain max-h-10 opacity-70 group-hover:opacity-100 transition-opacity"
+                            width={180}
+                            height={120}
+                            className="object-contain max-h-16 opacity-70 group-hover:opacity-100 transition-opacity"
                           />
                         </a>
                       ) : (
                         <Image
                           src={sponsor.imageUrl}
                           alt={sponsor.name}
-                          width={100}
-                          height={60}
-                          className="object-contain max-h-10 opacity-70"
+                          width={180}
+                          height={120}
+                          className="object-contain max-h-16 opacity-70"
                         />
                       )}
                     </div>

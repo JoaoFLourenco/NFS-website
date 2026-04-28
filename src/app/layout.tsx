@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Nova Formula Student",
   },
   description:
-    "Equipa de Formula Student da FCT NOVA - Projetamos, construímos e competimos com carros elétricos. Conheça nossos carros elétricos inovadores, equipe e competições.",
+    "Equipa de Fórmula Student da FCT NOVA - Projectamos, construímos e competimos por toda a Europa. Conheça os nossos automóveis inovadores, equipa e competições.",
   keywords: [
     "Formula Student",
     "FCT NOVA",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://nfs-website-nine.vercel.app/pt",
     languages: {
-      "pt-BR": "https://nfs-website-nine.vercel.app/pt",
+      "pt-PT": "https://nfs-website-nine.vercel.app/pt",
       "en-US": "https://nfs-website-nine.vercel.app/en",
     },
   },
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     locale: "pt_PT",
     url: "https://nfs-website-nine.vercel.app",
     siteName: "Nova Formula Student",
-    title: "Nova Formula Student - Equipa de Formula Student da FCT NOVA",
+    title: "Nova Formula Student - Equipa de Fórmula Student da FCT NOVA",
     description:
-      "Equipa de Formula Student da FCT NOVA - Projetamos, construímos e competimos com carros elétricos inovadores.",
+      "Equipa de Fórmula Student da FCT NOVA - Projectamos, construímos e competimos por toda a Europa com automóveis inovadores.",
     images: [
       {
         url: "https://nfs-website-nine.vercel.app/images/cars/EV01Render.png",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nova Formula Student",
     description:
-      "Equipa de Formula Student da FCT NOVA - Carros elétricos inovadores",
+      "Equipa de Fórmula Student da FCT NOVA - Automóveis inovadores",
   },
 };
 
@@ -82,11 +82,18 @@ export default function RootLayout({
     url: "https://nfs-website-nine.vercel.app",
     logo: "https://nfs-website-nine.vercel.app/images/logo.png",
     description:
-      "Equipa de Formula Student da FCT NOVA - Projetamos, construímos e competimos com carros elétricos inovadores.",
+      "Equipa de Fórmula Student da FCT NOVA - Projectamos, construímos e competimos por toda a Europa com automóveis inovadores.",
     foundingDate: "2015",
     location: {
       "@type": "Place",
-      name: "FCT NOVA, Caparica, Portugal",
+      name: "Nova Formula Student - Hangar 2, Faculdade de Ciências e Tecnologia, 2829-516 Caparica, Portugal",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Hangar 2, Faculdade de Ciências e Tecnologia",
+        postalCode: "2829-516",
+        addressLocality: "Caparica",
+        addressCountry: "PT",
+      },
     },
     sameAs: [
       "https://www.instagram.com/novaformulastudent",

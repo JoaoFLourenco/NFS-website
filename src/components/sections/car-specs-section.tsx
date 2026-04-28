@@ -24,7 +24,7 @@ export function CarSpecsSection({ car }: CarSpecsSectionProps) {
         <Dialog key={category.translationKey}>
           <DialogTrigger
             render={
-              <button className="group text-left rounded-xl border border-border bg-card p-6 hover:border-opacity-80 transition-all duration-200 hover:shadow-lg w-full" />
+              <button className="group text-left rounded-xs border border-border bg-card p-6 hover:border-opacity-80 transition-all duration-200 hover:shadow-lg w-full" />
             }
           >
             <div className="flex items-center justify-between mb-4">

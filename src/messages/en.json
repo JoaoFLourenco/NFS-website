@@ -74,6 +74,7 @@
     "dept_board": "Board",
     "dept_aerodynamics": "Aerodynamics",
     "dept_chassis": "Chassis",
+    "dept_chassis_dynamics": "Chassis & Dynamics",
     "dept_vehicle_dynamics": "Vehicle Dynamics",
     "dept_suspension": "Suspension",
     "dept_electronics": "Electronics",

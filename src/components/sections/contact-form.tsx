@@ -48,7 +48,7 @@ export function ContactForm() {
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#19a3ff]/50 focus:border-[#19a3ff]/50 transition-colors text-sm";
+    "w-full px-4 py-3 rounded-[4px] bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#19a3ff]/50 focus:border-[#19a3ff]/50 transition-colors text-sm";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">

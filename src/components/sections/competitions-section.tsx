@@ -28,7 +28,7 @@ export function CompetitionsSection({ competitions }: CompetitionsSectionProps) 
         <div className="flex flex-wrap gap-6">
           {competitions.map((competition, idx) => (
             <FadeIn key={competition.name} delay={idx * 0.08} className="flex-1 min-w-sm">
-              <div className="h-full rounded-xl border border-border bg-card/50 overflow-hidden hover:border-[#19a3ff]/30 transition-colors">
+              <div className="h-full rounded-[4px] border border-border bg-card/50 overflow-hidden hover:border-[#19a3ff]/30 transition-colors">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-[#19a3ff]/10 to-transparent p-6">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-3">

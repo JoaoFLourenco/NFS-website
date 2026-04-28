@@ -52,7 +52,7 @@ export function SponsorsSection({ sponsors, title }: SponsorsSectionProps) {
                   {grouped[tier].map((sponsor) => (
                     <div
                       key={sponsor.name}
-                      className="group rounded-lg border border-gray-200 bg-white p-3 flex items-center justify-center aspect-[3/2] hover:border-[#19a3ff]/50 hover:shadow-md transition-all"
+                      className="group rounded-[4px] border border-gray-200 bg-white p-3 flex items-center justify-center aspect-[3/2] hover:border-[#19a3ff]/50 hover:shadow-md transition-all"
                     >
                       {sponsor.link ? (
                         <a

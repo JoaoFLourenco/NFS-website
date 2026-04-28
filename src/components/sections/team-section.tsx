@@ -123,7 +123,7 @@ export function TeamSection({ seasons }: TeamSectionProps) {
               setActiveSeason(s.seasonLabel);
               setExpandedGroup(null);
             }}
-            className={`px-4 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
+            className={`px-4 py-1.5 rounded-[4px] text-sm font-medium border transition-colors ${
               activeSeason === s.seasonLabel
                 ? "bg-[#19a3ff] border-[#19a3ff] text-white"
                 : "border-border text-muted-foreground hover:border-[#19a3ff]/40 hover:text-foreground"
@@ -146,7 +146,7 @@ export function TeamSection({ seasons }: TeamSectionProps) {
                   <button
                     key={group.title}
                     onClick={() => handleGroupClick(group.title)}
-                    className={`text-left rounded-xl border p-5 space-y-3 transition-all duration-200 w-full ${
+                    className={`text-left rounded-[4px] border p-5 space-y-3 transition-all duration-200 w-full ${
                       isExpanded
                         ? "border-[#19a3ff]/60 bg-[#19a3ff]/5"
                         : "border-border bg-card hover:border-[#19a3ff]/30"
@@ -209,7 +209,7 @@ export function TeamSection({ seasons }: TeamSectionProps) {
                       </h3>
                       <button
                         onClick={() => setExpandedGroup(null)}
-                        className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                        className="p-1.5 rounded-[4px] text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                       >
                         <X className="h-4 w-4" />
                       </button>

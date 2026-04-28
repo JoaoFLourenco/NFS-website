@@ -6,10 +6,11 @@ import { CarSpecsSection } from "@/components/sections/car-specs-section";
 import { TeamSection } from "@/components/sections/team-section";
 import { SponsorsSection } from "@/components/sections/sponsors-section";
 import { CompetitionsSection } from "@/components/sections/competitions-section";
+import { getCarGalleryImageUrl } from "@/lib/services/storage.service";
 import { FadeIn } from "@/components/sections/fade-in";
 import { Link } from "@/i18n/navigation";
 import { ChevronLeft } from "lucide-react";
-import { ev01Teams, fenixEvoTeams } from "@/lib/data/teams";
+import { ev01Teams, fenixEvoTeams, dragonTeams } from "@/lib/data/teams";
 import { getSponsorsForCar } from "@/lib/data/sponsor-data";
 import { getCompetitionsForCar, type Competition } from "@/lib/data/competitions";
 import type { Car } from "@/lib/types/car";
@@ -18,6 +19,7 @@ import type { TeamSeason } from "@/lib/data/teams";
 const teamsByCar: Record<string, TeamSeason[]> = {
   fsnovaev01: ev01Teams,
   fsfenixevo: fenixEvoTeams,
+  fsdragon: dragonTeams,
 };
 
 export async function generateStaticParams() {
@@ -40,7 +42,7 @@ export default async function CarDetailPage({
   const teams = teamsByCar[slug] ?? null;
   const sponsors = getSponsorsForCar(slug);
   const competitions = getCompetitionsForCar(slug);
-  return <CarDetailContent car={car} teams={teams} sponsors={sponsors} competitions={competitions} />;
+  return <CarDetailContent car={car} teams={teams} sponsors={sponsors} competitions={competitions} slug={slug} />;
 }
 
 function CarDetailContent({
@@ -48,11 +50,13 @@ function CarDetailContent({
   teams,
   sponsors,
   competitions,
+  slug,
 }: {
   car: Car;
   teams: TeamSeason[] | null;
   sponsors: typeof import("@/lib/data/sponsor-data").ev01Sponsors;
   competitions: Competition[];
+  slug: string;
 }) {
   const t = useTranslations("garage");
 
@@ -139,17 +143,22 @@ function CarDetailContent({
           <FadeIn delay={0.1}>
             {car.galleryImages.length > 0 ? (
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {car.galleryImages.map((img, i) => (
+                {car.galleryImages.map((filename, i) => (
                   <div
                     key={i}
-                    className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border"
+                    className="relative aspect-[4/3] rounded-[4px] overflow-hidden border border-border"
                   >
-                    <Image src={img} alt={`${car.name} photo ${i + 1}`} fill className="object-cover" />
+                    <Image
+                      src={getCarGalleryImageUrl(slug, filename)}
+                      alt={`${car.name} photo ${i + 1}`}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 ))}
               </div>
             ) : (
-              <div className="rounded-xl border border-border border-dashed h-48 flex items-center justify-center">
+              <div className="rounded-[4px] border border-border border-dashed h-48 flex items-center justify-center">
                 <p className="text-muted-foreground text-sm">{t("no_photos")}</p>
               </div>
             )}

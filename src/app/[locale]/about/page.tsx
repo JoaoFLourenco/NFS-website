@@ -67,7 +67,7 @@ export default function AboutPage() {
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FadeIn delay={0.1}>
-              <div className="aspect-video rounded-xl overflow-hidden border border-border">
+              <div className="aspect-video rounded-[4px] overflow-hidden border border-border">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/09gNvZ6cpTc"
@@ -78,7 +78,7 @@ export default function AboutPage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <div className="aspect-video rounded-xl overflow-hidden border border-border">
+              <div className="aspect-video rounded-[4px] overflow-hidden border border-border">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/iipu79myd-A"
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   <AccordionItem
                     key={key}
                     value={key}
-                    className="border border-border rounded-lg px-4 bg-card/50"
+                    className="border border-border rounded-[4px] px-4 bg-card/50"
                   >
                     <AccordionTrigger className="hover:no-underline py-4">
                       <div className="flex items-center gap-3">
@@ -156,7 +156,7 @@ export default function AboutPage() {
                   <AccordionItem
                     key={key}
                     value={key}
-                    className="border border-border rounded-lg px-4 bg-card/50"
+                    className="border border-border rounded-[4px] px-4 bg-card/50"
                   >
                     <AccordionTrigger className="hover:no-underline py-4">
                       <div className="flex items-center gap-3">

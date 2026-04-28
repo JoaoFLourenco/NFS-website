@@ -52,8 +52,8 @@ export default function PartnersPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
             {perks.map(({ icon: Icon, key }, i) => (
               <FadeIn key={key} delay={i * 0.08} className="h-full">
-                <div className="h-full rounded-xl border border-border bg-card p-6 flex flex-col gap-3 hover:border-[#19a3ff]/30 transition-colors">
-                  <div className="p-2.5 rounded-lg bg-[#19a3ff]/10 w-fit">
+                <div className="h-full rounded-[4px] border border-border bg-card p-6 flex flex-col gap-3 hover:border-[#19a3ff]/30 transition-colors">
+                  <div className="p-2.5 rounded-[4px] bg-[#19a3ff]/10 w-fit">
                     <Icon className="h-5 w-5 text-[#19a3ff]" />
                   </div>
                   <h3 className="font-medium text-sm text-foreground">{t(key)}</h3>
@@ -74,7 +74,7 @@ export default function PartnersPage() {
               {Array.from({ length: 6 }).map((_, i) => (
                 <div
                   key={i}
-                  className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border bg-card"
+                  className="relative aspect-[4/3] rounded-[4px] overflow-hidden border border-border bg-card"
                 >
                   <Image
                     src={`/images/partners/car_brands_${i + 1}.jpg`}
@@ -97,7 +97,7 @@ export default function PartnersPage() {
             </h3>
             <a
               href="mailto:geral@novaformulastudent.pt"
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-[#19a3ff] hover:bg-[#0077cc] text-white font-medium transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-[4px] bg-[#19a3ff] hover:bg-[#0077cc] text-white font-medium transition-colors"
             >
               {t("contact_us")}
             </a>

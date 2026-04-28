@@ -117,7 +117,7 @@ export default function HomePage() {
             {cars.map((car, i) => (
               <FadeIn key={car.slug} delay={i * 0.1}>
                 <Link href={`/garage/${car.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border bg-card transition-all duration-300 group-hover:border-[#19a3ff]/50 group-hover:shadow-lg group-hover:shadow-[#19a3ff]/10">
+                  <div className="relative aspect-[4/3] rounded-[4px] overflow-hidden border border-border bg-card transition-all duration-300 group-hover:border-[#19a3ff]/50 group-hover:shadow-lg group-hover:shadow-[#19a3ff]/10">
                     <Image
                       src={car.heroImage}
                       alt={car.name}

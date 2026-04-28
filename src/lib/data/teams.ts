@@ -594,5 +594,89 @@ const fenixEvo_2425: TeamSeason = {
   ],
 };
 
+/* ============================================================
+   FS DRAGON — 2019
+   ============================================================ */
+const dragon_2019: TeamSeason = {
+  seasonLabel: "2019",
+  groups: [
+    {
+      title: "board",
+      members: [
+        { name: "João Fernandes", role: "team-leader" },
+        { name: "Guilherme Costa", role: "technical-director" },
+      ],
+    },
+    {
+      title: "aerodynamics",
+      members: [
+        { name: "Francisco Rodrigues", role: "dep-leader" },
+        { name: "Beatriz Simões", role: "member" },
+        { name: "Rafael Nunes", role: "member" },
+        { name: "Ricardo Cutileiro", role: "member" },
+      ],
+    },
+    {
+      title: "chassis_dynamics",
+      members: [
+        { name: "João Fernandes", role: "dep-leader" },
+        { name: "António Figueiredo", role: "member" },
+        { name: "Hugo Grilo", role: "member" },
+        { name: "João Balbino", role: "member" },
+      ],
+    },
+    {
+      title: "electronics",
+      members: [
+        { name: "Frederico Inácio", role: "dep-leader" },
+        { name: "Sergiu Nica", role: "member" },
+        { name: "Daniel Sousa", role: "member" },
+        { name: "Gustavo Raio", role: "member" },
+        { name: "Jorge Ferreira", role: "member" },
+        { name: "Ruben Vaz", role: "member" },
+        { name: "Tiago Mega", role: "member" },
+      ],
+    },
+    {
+      title: "powertrain",
+      members: [
+        { name: "António Ferreira", role: "dep-leader" },
+        { name: "Gonçalo Correia", role: "member" },
+        { name: "Fabio Santos", role: "member" },
+        { name: "João Botelho", role: "member" },
+      ],
+    },
+    {
+      title: "marketing",
+      members: [
+        { name: "Isabel Botelho", role: "dep-leader" },
+        { name: "Pedro Botelho", role: "member" },
+        { name: "Tiago Soares", role: "member" },
+        { name: "Mafalda Pinto", role: "member" },
+        { name: "José Lima", role: "member" },
+        { name: "Rodrigo Alegria", role: "member" },
+        { name: "Bernardo Santos", role: "member" },
+        { name: "Pedro Trindade", role: "member" },
+        { name: "João Domingues", role: "member" },
+      ],
+    },
+    {
+      title: "corporate-relations",
+      members: [
+        { name: "Isabel Botelho", role: "dep-leader" },
+        { name: "Pedro Botelho", role: "member" },
+        { name: "Tiago Soares", role: "member" },
+        { name: "Mafalda Pinto", role: "member" },
+        { name: "José Lima", role: "member" },
+        { name: "Rodrigo Alegria", role: "member" },
+        { name: "Bernardo Santos", role: "member" },
+        { name: "Pedro Trindade", role: "member" },
+        { name: "João Domingues", role: "member" },
+      ],
+    },
+  ],
+};
+
 export const ev01Teams: TeamSeason[] = [ev01_2425, ev01_2526];
 export const fenixEvoTeams: TeamSeason[] = [fenixEvo_2324, fenixEvo_2425];
+export const dragonTeams: TeamSeason[] = [dragon_2019];

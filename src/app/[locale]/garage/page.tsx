@@ -12,14 +12,22 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Garage - Nova Formula Student",
   description:
-    "Conheça todos os carros elétricos da Nova Formula Student. Explore as especificações, desempenho e história de cada veículo.",
+    "Conheça todos os automóveis elétricos da Nova Fórmula Student. Explore as especificações técnicas, desempenho e história de cada veículo.",
   keywords: [
     "Formula Student",
-    "Carros elétricos",
+    "Fórmula Student",
+    "Formula Student Portugal",
+    "Nova Formula Student",
+    "Nova Fórmula Student",
+    "NFS",
+    "Automóveis elétricos",
     "Garage",
     "EV01",
-    "Fenix",
+    "Fenix Evo",
     "Dragon",
+    "Especificações técnicas",
+    "Racing cars",
+    "Carros de corrida",
   ],
 };
 

@@ -12,12 +12,20 @@ import type { PartnerTier } from "@/lib/types/partner";
 export const metadata: Metadata = {
   title: "Partners - Nova Formula Student",
   description:
-    "Conheça nossos parceiros e patrocinadores. Saiba como sua empresa pode se beneficiar ao apoiar a Nova Formula Student.",
+    "Conheça os nossos parceiros e patrocinadores. Saiba como a sua empresa pode beneficiar ao apoiar a Nova Fórmula Student e a inovação.",
   keywords: [
     "Parceiros",
     "Patrocinadores",
-    "Formula Student",
     "Sponsorship",
+    "Formula Student",
+    "Fórmula Student",
+    "Nova Formula Student",
+    "Nova Fórmula Student",
+    "NFS",
+    "FCT NOVA",
+    "Patrocínio",
+    "Parcerias",
+    "Engenharia",
   ],
 };
 import {

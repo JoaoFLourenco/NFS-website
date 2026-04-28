@@ -14,13 +14,20 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About - Nova Formula Student",
   description:
-    "Conheça a história, missão e estrutura da Nova Formula Student. Uma equipa de estudantes da FCT NOVA dedicada à inovação em veículos elétricos.",
+    "Conheça a história, missão e estrutura da Nova Fórmula Student. Uma equipa de estudantes da FCT NOVA dedicada à inovação em automóveis elétricos e engenharia.",
   keywords: [
     "Sobre",
     "Formula Student",
+    "Fórmula Student",
+    "Nova Formula Student",
+    "Nova Fórmula Student",
+    "NFS",
     "FCT NOVA",
     "Equipa",
     "Missão",
+    "Engenharia",
+    "Inovação",
+    "Automóvel elétrico",
   ],
 };
 

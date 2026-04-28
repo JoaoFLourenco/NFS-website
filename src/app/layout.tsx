@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Engineering",
     "Nova Formula Student",
   ],
+  verification: {
+    google: "ae5vAYLqyussk8QxNqM_eI04QWchF1rwMqM6ZJVNxXk",
+  },
 };
 
 export default function RootLayout({

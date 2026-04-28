@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { getCarBySlug, getCarSlugs } from "@/lib/services/cars.service";
@@ -21,6 +22,49 @@ const teamsByCar: Record<string, TeamSeason[]> = {
   fsfenixevo: fenixEvoTeams,
   fsdragon: dragonTeams,
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const car = getCarBySlug(slug);
+
+  if (!car) {
+    return {};
+  }
+
+  const title = `${car.name} - Nova Formula Student`;
+  const description = `Conheça o ${car.name} (${car.year}) da Nova Formula Student. Especificações técnicas, equipe, competições e galeria.`;
+
+  return {
+    title,
+    description,
+    keywords: [car.name, "Formula Student", "FCT NOVA", car.year],
+    openGraph: {
+      title,
+      description,
+      url: `https://nfs-website-nine.vercel.app/pt/garage/${slug}`,
+      type: "website",
+      images: [
+        {
+          url: car.heroImage.startsWith("http")
+            ? car.heroImage
+            : `https://nfs-website-nine.vercel.app${car.heroImage}`,
+          width: 1200,
+          height: 630,
+          alt: car.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const locales = ["pt", "en"];

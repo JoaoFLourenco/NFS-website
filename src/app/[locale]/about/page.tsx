@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { PageHeader } from "@/components/sections/page-header";
 import { FadeIn } from "@/components/sections/fade-in";
@@ -10,6 +11,18 @@ import {
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: "About - Nova Formula Student",
+  description:
+    "Conheça a história, missão e estrutura da Nova Formula Student. Uma equipa de estudantes da FCT NOVA dedicada à inovação em veículos elétricos.",
+  keywords: [
+    "Sobre",
+    "Formula Student",
+    "FCT NOVA",
+    "Equipa",
+    "Missão",
+  ],
+};
 
 const staticEvents = [
   { key: "business_plan", points: 75 },

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { PageHeader } from "@/components/sections/page-header";
@@ -7,6 +8,18 @@ import { SponsorsSection } from "@/components/sections/sponsors-section";
 import { getAllPartners, getPartnerTiers } from "@/lib/services/partners.service";
 import { allSponsors } from "@/lib/data/sponsor-data";
 import type { PartnerTier } from "@/lib/types/partner";
+
+export const metadata: Metadata = {
+  title: "Partners - Nova Formula Student",
+  description:
+    "Conheça nossos parceiros e patrocinadores. Saiba como sua empresa pode se beneficiar ao apoiar a Nova Formula Student.",
+  keywords: [
+    "Parceiros",
+    "Patrocinadores",
+    "Formula Student",
+    "Sponsorship",
+  ],
+};
 import {
   Eye,
   Megaphone,

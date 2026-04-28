@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -7,6 +8,20 @@ import { FadeIn } from "@/components/sections/fade-in";
 import { buttonVariants } from "@/lib/button-variants";
 import { getAllCars } from "@/lib/services/cars.service";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Garage - Nova Formula Student",
+  description:
+    "Conheça todos os carros elétricos da Nova Formula Student. Explore as especificações, desempenho e história de cada veículo.",
+  keywords: [
+    "Formula Student",
+    "Carros elétricos",
+    "Garage",
+    "EV01",
+    "Fenix",
+    "Dragon",
+  ],
+};
 
 export default function GaragePage() {
   const t = useTranslations("garage");

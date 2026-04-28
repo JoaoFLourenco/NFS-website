@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   verification: {
     google: "ae5vAYLqyussk8QxNqM_eI04QWchF1rwMqM6ZJVNxXk",
   },
+  alternates: {
+    canonical: "https://nfs-website-nine.vercel.app/pt",
+  },
 };
 
 export default function RootLayout({

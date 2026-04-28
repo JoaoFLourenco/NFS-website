@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://nfs-website-nine.vercel.app/pt"; // Replace with your actual domain
+const BASE_URL = "https://nfs-website-nine.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["pt", "en"];

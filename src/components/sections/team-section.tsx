@@ -11,6 +11,9 @@ interface TeamSectionProps {
   seasons: TeamSeason[];
 }
 
+const SUPABASE_URL = "https://ylahzitzhsagxcolxita.supabase.co/storage/v1/object/public/team-members";
+const PLACEHOLDER_IMAGE = `${SUPABASE_URL}/placeholder.jpg`;
+
 const roleBadgeClass: Record<TeamRole, string> = {
   "team-leader":               "bg-[#19a3ff]/20 text-[#19a3ff] border-[#19a3ff]/30",
   "technical-director":        "bg-purple-500/20 text-purple-300 border-purple-500/30",
@@ -29,30 +32,25 @@ function MemberCard({
   member: TeamGroup["members"][number];
   t: ReturnType<typeof useTranslations<"garage">>;
 }) {
+  const [imageError, setImageError] = useState(false);
+
+  // Use placeholder if no imageSrc or if image fails to load
+  const imageSrc = !member.imageSrc || imageError ? PLACEHOLDER_IMAGE : member.imageSrc;
+  const isPlaceholder = !member.imageSrc || imageError;
+
   return (
     <div className="flex flex-col items-center gap-2 text-center">
-      <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-border bg-card shrink-0">
-        {member.imageSrc ? (
-          <Image
-            src={member.imageSrc}
-            alt={member.name}
-            fill
-            className="object-cover"
-            sizes="80px"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center bg-muted">
-            <svg viewBox="0 0 80 80" className="w-10 h-10 text-muted-foreground" fill="none">
-              <circle cx="40" cy="30" r="14" stroke="currentColor" strokeWidth="2.5" />
-              <path
-                d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
-        )}
+      <div className="relative w-34 h-34 rounded-xs overflow-hidden border-2 border-border bg-card shrink-0">
+        <Image
+          src={imageSrc}
+          alt={member.name}
+          fill
+          className={`object-cover ${
+            member.imageSrc?.includes("25-26") && !isPlaceholder ? "-rotate-270" : ""
+          }`}
+          sizes="200px"
+          onError={() => setImageError(true)}
+        />
       </div>
       <div className="space-y-1">
         <p className="text-sm font-medium text-foreground leading-tight">{member.name}</p>

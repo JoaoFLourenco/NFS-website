@@ -109,7 +109,7 @@ export default function ContactsPage() {
             {/* Map */}
             <div className="rounded-[4px] overflow-hidden border border-border aspect-[4/3]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.1234567890!2d-9.2070!3d38.6621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecb3c9c11b87b%3A0x5ab0f4a9b0a0c0c0!2sFCT%20NOVA!5e0!3m2!1spt!2spt!4v1700000000000!5m2!1spt!2spt"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.5962464020295!2d-9.207883917519423!3d38.66142521232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecb0019a36b7d%3A0x19e6f346daf58d55!2sNOVA%20Formula%20Student%20-%20Hangar%202!5e1!3m2!1spt-PT!2spt!4v1777894074424!5m2!1spt-PT!2spt"
                 className="w-full h-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

@@ -68,6 +68,12 @@ export const ev01Sponsors: Partner[] = [
     link: "https://www.flytap.com/",
     tier: "gold",
   },
+  {
+    name: "BENTELER",
+    imageUrl: getSupabaseImageUrl("ev01/gold/benteler.svg"),
+    link: "https://www.benteler.com/",
+    tier: "gold",
+  },
 
   // Silver
   {

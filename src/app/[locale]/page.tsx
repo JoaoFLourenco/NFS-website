@@ -89,9 +89,9 @@ export default function HomePage() {
             </div>
           </FadeIn>
           <FadeIn direction="left" delay={0.15}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border">
+            <div className="relative aspect-[3/2] rounded-2xl overflow-hidden border border-border">
               <Image
-                src="/images/team/team_photo_2025.jpg"
+                src="/images/team/team_photo_2026.jpg"
                 alt="Nova Formula Student Team"
                 fill
                 className="object-cover"

@@ -74,6 +74,24 @@ export const ev01Sponsors: Partner[] = [
     link: "https://www.benteler.com/",
     tier: "gold",
   },
+  {
+    name: "AES-GROUP",
+    imageUrl: getSupabaseImageUrl("ev01/gold/aes-group.png"),
+    link: "https://www.aesmolds.com/en",
+    tier: "gold",
+  },
+  {
+    name: "EXTRAMOTION",
+    imageUrl: getSupabaseImageUrl("ev01/gold/extramotion.png"),
+    link: "https://www.extramotion.com/",
+    tier: "gold",
+  },
+  {
+    name: "TE",
+    imageUrl: getSupabaseImageUrl("ev01/gold/te.png"),
+    link: "https://www.te.com/pt/home.html",
+    tier: "gold",
+  },
 
   // Silver
   {
@@ -106,6 +124,24 @@ export const ev01Sponsors: Partner[] = [
     link: "https://www.visteon.com/",
     tier: "silver",
   },
+  {
+    name: "Composites Kingdom",
+    imageUrl: getSupabaseImageUrl("ev01/silver/composites.png"),
+    link: "https://compositeskingdom.com/",
+    tier: "silver",
+  },
+  {
+    name: "Caixa Geral de Depósitos",
+    imageUrl: getSupabaseImageUrl("ev01/silver/cgd.png"),
+    link: "https://www.cgd.pt/",
+    tier: "silver",
+  },
+  {
+    name: "Siemens",
+    imageUrl: getSupabaseImageUrl("ev01/silver/siemens.png"),
+    link: "https://www.siemens.com/",
+    tier: "silver",
+  },
 
   // Bronze
   {
@@ -115,15 +151,21 @@ export const ev01Sponsors: Partner[] = [
     tier: "bronze",
   },
   {
+    name: "AF Azevedos",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/af-azevedos.webp"),
+    link: "https://www.afazevedos.pt/",
+    tier: "bronze",
+  },
+  {
     name: "Alphayate",
     imageUrl: getSupabaseImageUrl("ev01/bronze/alphayate.png"),
     link: "https://www.alphayate.com/",
     tier: "bronze",
   },
   {
-    name: "BLOCKS",
-    imageUrl: getSupabaseImageUrl("ev01/bronze/blocks.png"),
-    link: "https://blockstec.com/",
+    name: "bender",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/bender.svg"),
+    link: "https://www.bender.de/en/",
     tier: "bronze",
   },
   {
@@ -139,9 +181,15 @@ export const ev01Sponsors: Partner[] = [
     tier: "bronze",
   },
   {
-    name: "KIP",
-    imageUrl: getSupabaseImageUrl("ev01/bronze/kip.png"),
-    link: "https://kip.pt/",
+    name: "Filkemp",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/filkemp.png"),
+    link: "https://www.filkemp.com/",
+    tier: "bronze",
+  },
+  {
+    name: "MetalSolid",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/metal-solid.png"),
+    link: "https://www.metalsolid.pt/",
     tier: "bronze",
   },
   {
@@ -169,9 +217,27 @@ export const ev01Sponsors: Partner[] = [
     tier: "bronze",
   },
   {
-    name: "TE",
-    imageUrl: getSupabaseImageUrl("ev01/bronze/te.png"),
-    link: "https://www.te.com/pt/home.html",
+    name: "Retificadora Guimaraes",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/retificadora-guimaraes.jpeg"),
+    link: "https://www.rgmotores.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Retrotarget",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/retro-target.png"),
+    link: "https://www.retrotarget.com/pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Shapetek",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/Shapetek.png"),
+    link: "https://www.shapetek.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "So Soares",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/sosoares.png"),
+    link: "https://www.grupososoares.pt/pt/home",
     tier: "bronze",
   },
   {
@@ -192,6 +258,60 @@ export const ev01Sponsors: Partner[] = [
     link: "https://eshop.wurth.pt/pt/PT/EUR/",
     tier: "bronze",
   },
+  {
+    name: "Cubotronic",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/cubotronic.png"),
+    link: "https://www.cubotonic.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Bosch",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/bosch.png"),
+    link: "https://www.bosch.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Cascadia",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/cascadia.avif"),
+    link: "https://www.cascadiamotion.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Cepra",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/cepra.jpeg"),
+    link: "https://www.cepra.pt/",
+    tier: "bronze",
+  },
+  {
+    name: "Critical Techworks",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/critical-techworks.png"),
+    link: "https://www.criticaltechworks.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Emrax",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/emrax.png"),
+    link: "https://www.emrax.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Enepaq",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/enepaq.svg"),
+    link: "https://www.enepaq.com/",
+    tier: "bronze",
+  },
+  {
+    name: "Lemo",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/lemo.png"),
+    link: "https://www.lemo.com/",
+    tier: "bronze",
+  },
+    {
+    name: "Spal",
+    imageUrl: getSupabaseImageUrl("ev01/bronze/spal.png"),
+    link: "https://www.spal.com/",
+    tier: "bronze",
+  },
 
   // Partner (Software)
   {
@@ -201,15 +321,51 @@ export const ev01Sponsors: Partner[] = [
     tier: "partner",
   },
   {
+    name: "KIP",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/kip.png"),
+    link: "https://kip.pt/",
+    tier: "partner",
+  },
+  {
+    name: "GSCargoSolutions",
+    imageUrl: getSupabaseImageUrl("ev01/partner/GSCargoSolutions.png"),
+    link: "https://gscargo.pt/",
+    tier: "partner",
+  },
+  {
+    name: "BLOCKS",
+    imageUrl: getSupabaseImageUrl("ev01/partner/blocks.png"),
+    link: "https://blockstec.com/",
+    tier: "partner",
+  },
+  {
+    name: "LaserTIG",
+    imageUrl: getSupabaseImageUrl("ev01/partner/Lasertig.png"),
+    link: "https://www.lasertig.com/",
+    tier: "partner",
+  },
+  {
     name: "IPG Software",
     imageUrl: getSupabaseImageUrl("ev01/partner/ipg.svg"),
     link: "https://www.ipg-automotive.com/",
     tier: "partner",
   },
   {
-    name: "MATHWORKS",
-    imageUrl: getSupabaseImageUrl("ev01/partner/mathworks.png"),
-    link: "https://www.mathworks.com/",
+    name: "Lado Periferico",
+    imageUrl: getSupabaseImageUrl("ev01/partner/ladoperiferico.png"),
+    link: "https://www.lado-periferico.pt/",
+    tier: "partner",
+  },
+  {
+    name: "Lado Periferico",
+    imageUrl: getSupabaseImageUrl("ev01/partner/ladoperiferico.png"),
+    link: "https://www.lado-periferico.pt/",
+    tier: "partner",
+  },
+  {
+    name: "Phoenix Contact",
+    imageUrl: getSupabaseImageUrl("ev01/partner/phoenixcontact.svg"),
+    link: "https://www.phoenixcontact.com/",
     tier: "partner",
   },
   {
@@ -240,6 +396,30 @@ export const ev01Sponsors: Partner[] = [
     name: "VI-Grade",
     imageUrl: getSupabaseImageUrl("ev01/partner/vi-grade.jpg"),
     link: "https://www.vi-grade.com",
+    tier: "partner",
+  },
+  {
+    name: "M3T",
+    imageUrl: getSupabaseImageUrl("ev01/partner/m3t.jpg"),
+    link: "https://m3t.pt/",
+    tier: "partner",
+  },
+  {
+    name: "MakProfile",
+    imageUrl: getSupabaseImageUrl("ev01/partner/MakProfile.webp"),
+    link: "https://makprofile.com/",
+    tier: "partner",
+  },
+  {
+    name: "s3d",
+    imageUrl: getSupabaseImageUrl("ev01/partner/s3d.webp"),
+    link: "https://s3d.pt/",
+    tier: "partner",
+  },
+    {
+    name: "MATHWORKS",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/mathworks.png"),
+    link: "https://www.mathworks.com/",
     tier: "partner",
   },
 ];
@@ -279,24 +459,6 @@ export const fenixEvoSponsors: Partner[] = [
 
   // Gold
   {
-    name: "Bosch",
-    imageUrl: getSupabaseImageUrl("fenixevo/gold/bosch.png"),
-    link: "https://www.bosch.pt/",
-    tier: "gold",
-  },
-  {
-    name: "Ciclo Fapril",
-    imageUrl: getSupabaseImageUrl("fenixevo/gold/ciclo-fapril.png"),
-    link: "https://ciclofapril.pt/pt/",
-    tier: "gold",
-  },
-  {
-    name: "Cubotronic",
-    imageUrl: getSupabaseImageUrl("fenixevo/gold/cubotronic.png"),
-    link: "https://www.cubotonic.pt/",
-    tier: "gold",
-  },
-  {
     name: "Galp",
     imageUrl: getSupabaseImageUrl("fenixevo/gold/galp.png"),
     link: "https://galp.com",
@@ -326,6 +488,12 @@ export const fenixEvoSponsors: Partner[] = [
     name: "Althima",
     imageUrl: getSupabaseImageUrl("fenixevo/silver/althima.svg"),
     link: "https://althima.com/",
+    tier: "silver",
+  },
+  {
+    name: "Ciclo Fapril",
+    imageUrl: getSupabaseImageUrl("fenixevo/gold/ciclo-fapril.png"),
+    link: "https://ciclofapril.pt/pt/",
     tier: "silver",
   },
   {
@@ -373,21 +541,9 @@ export const fenixEvoSponsors: Partner[] = [
     tier: "bronze",
   },
   {
-    name: "Altium",
-    imageUrl: getSupabaseImageUrl("fenixevo/bronze/altium.png"),
-    link: "https://www.altium.com/altium-designer",
-    tier: "bronze",
-  },
-  {
     name: "AMtita",
     imageUrl: getSupabaseImageUrl("fenixevo/bronze/amtita.jpg"),
     link: "https://www.amtita.pt/",
-    tier: "bronze",
-  },
-  {
-    name: "BLOCKS",
-    imageUrl: getSupabaseImageUrl("fenixevo/bronze/blocks.png"),
-    link: "https://blockstec.com/",
     tier: "bronze",
   },
   {
@@ -430,24 +586,6 @@ export const fenixEvoSponsors: Partner[] = [
     name: "KFRIO",
     imageUrl: getSupabaseImageUrl("fenixevo/bronze/kfrio.png"),
     link: "https://kfrio.pt/",
-    tier: "bronze",
-  },
-  {
-    name: "KIP",
-    imageUrl: getSupabaseImageUrl("fenixevo/bronze/kip.png"),
-    link: "https://kip.pt/",
-    tier: "bronze",
-  },
-  {
-    name: "M3T",
-    imageUrl: getSupabaseImageUrl("fenixevo/bronze/m3t.jpg"),
-    link: "https://m3t.pt/",
-    tier: "bronze",
-  },
-  {
-    name: "MATHWORKS",
-    imageUrl: getSupabaseImageUrl("fenixevo/bronze/mathworks.png"),
-    link: "https://www.mathworks.com/",
     tier: "bronze",
   },
   {
@@ -519,11 +657,18 @@ export const fenixEvoSponsors: Partner[] = [
     tier: "partner",
   },
   {
+    name: "KIP",
+    imageUrl: getSupabaseImageUrl("fenixevo/bronze/kip.png"),
+    link: "https://kip.pt/",
+    tier: "partner",
+  },
+  {
     name: "SolidWorks",
     imageUrl: getSupabaseImageUrl("fenixevo/partner/solidworks.svg"),
     link: "https://www.solidworks.com/",
     tier: "partner",
   },
+
 ];
 
 /** All unique sponsors across both projects (deduplicated by name) */

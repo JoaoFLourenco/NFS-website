@@ -38,6 +38,27 @@ const ev01Competitions: CarCompetitions = {
         },
       ],
     },
+    {
+      name: "FSPT",
+      date: "19 July - 24 July 2026",
+      location: "Castelo Branco Kart Track",
+      categories: [
+        {
+          title: "Static Events",
+          results: [
+            { category: "Engineering Design", placement: "5th Place" },
+            { category: "Cost & Manufacturing", placement: "6th Place" },
+            { category: "Business Plan Presentation", placement: "6th Place" },
+          ],
+        },
+        {
+          title: "Dynamic Events",
+          results: [
+            { category: "", placement: "Unfortunately, in the days leading up to the competition, an issue arose with the NOVA EV-Ol's inverter that rendered the vehicle inoperable. Since then, we have been working closely with the supplier to expedite a resolution. Consequently, we were unable to participate in the FSPT dynamic events." },
+          ],
+        },
+      ],
+    },
   ],
 };
 

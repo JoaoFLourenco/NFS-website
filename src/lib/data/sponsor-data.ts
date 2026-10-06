@@ -357,12 +357,6 @@ export const ev01Sponsors: Partner[] = [
     tier: "partner",
   },
   {
-    name: "Lado Periferico",
-    imageUrl: getSupabaseImageUrl("ev01/partner/ladoperiferico.png"),
-    link: "https://www.lado-periferico.pt/",
-    tier: "partner",
-  },
-  {
     name: "Phoenix Contact",
     imageUrl: getSupabaseImageUrl("ev01/partner/phoenixcontact.svg"),
     link: "https://www.phoenixcontact.com/",

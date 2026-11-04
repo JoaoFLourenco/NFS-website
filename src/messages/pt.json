@@ -129,7 +129,8 @@
   "contacts": {
     "title": "Contactos",
     "team_email": "Email da Equipa",
-    "cr_email": "Email CR",
+    "cr_email": "Email Corporate Relations",
+    "pr_email": "Email Produção",
     "address": "Morada",
     "address_value": "FCT NOVA, Campus de Caparica, 2829-516 Caparica, Portugal",
     "social_media": "Redes Sociais",

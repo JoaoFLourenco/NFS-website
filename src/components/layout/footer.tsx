@@ -95,8 +95,9 @@ export function Footer() {
               {t("contacts.title")}
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>geral@novaformulastudent.pt</p>
-              <p>cr@novaformulastudent.pt</p>
+              <p>formulastudent@ae.fct.unl.pt</p>
+              <p>cr.formulastudent@ae.fct.unl.pt</p>
+              <p>op.formulastudent@ae.fct.unl.pt</p>
               <p>FCT NOVA, Caparica</p>
             </div>
           </div>

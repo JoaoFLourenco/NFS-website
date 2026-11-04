@@ -34,9 +34,11 @@ export default function ContactsPage() {
     <div>
       <PageHeader title={t("title")} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 space-y-16">
+        {/* Contact Info & Map Side-by-Side Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Contact info */}
+          
+          {/* Left Column: Contact Info */}
           <FadeIn direction="right" className="space-y-8">
             <div className="flex gap-4 p-5 rounded-[4px] border border-border bg-card">
               <div className="p-2.5 rounded-[4px] bg-[#19a3ff]/10 h-fit">
@@ -47,10 +49,10 @@ export default function ContactsPage() {
                   {t("team_email")}
                 </p>
                 <a
-                  href="mailto:geral@novaformulastudent.pt"
+                  href="mailto:formulastudent@ae.fct.unl.pt"
                   className="text-foreground hover:text-[#19a3ff] transition-colors font-medium"
                 >
-                  geral@novaformulastudent.pt
+                  formulastudent@ae.fct.unl.pt
                 </a>
               </div>
             </div>
@@ -64,10 +66,27 @@ export default function ContactsPage() {
                   {t("cr_email")}
                 </p>
                 <a
-                  href="mailto:cr@novaformulastudent.pt"
+                  href="mailto:cr.formulastudent@ae.fct.unl.pt"
                   className="text-foreground hover:text-[#19a3ff] transition-colors font-medium"
                 >
-                  cr@novaformulastudent.pt
+                  cr.formulastudent@ae.fct.unl.pt
+                </a>
+              </div>
+            </div>
+
+            <div className="flex gap-4 p-5 rounded-[4px] border border-border bg-card">
+              <div className="p-2.5 rounded-[4px] bg-[#19a3ff]/10 h-fit">
+                <Mail className="h-5 w-5 text-[#19a3ff]" />
+              </div>
+              <div>
+                <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-1">
+                  {t("pr_email")}
+                </p>
+                <a
+                  href="mailto:op.formulastudent@ae.fct.unl.pt"
+                  className="text-foreground hover:text-[#19a3ff] transition-colors font-medium"
+                >
+                  op.formulastudent@ae.fct.unl.pt
                 </a>
               </div>
             </div>
@@ -105,9 +124,11 @@ export default function ContactsPage() {
                 ))}
               </div>
             </div>
+          </FadeIn>
 
-            {/* Map */}
-            <div className="rounded-[4px] overflow-hidden border border-border aspect-[4/3]">
+          {/* Right Column: Map (Takes up identical height using h-full) */}
+          <FadeIn direction="left" delay={0.15} className="h-full min-h-[350px]">
+            <div className="rounded-[4px] overflow-hidden border border-border h-full w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.5962464020295!2d-9.207883917519423!3d38.66142521232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecb0019a36b7d%3A0x19e6f346daf58d55!2sNOVA%20Formula%20Student%20-%20Hangar%202!5e1!3m2!1spt-PT!2spt!4v1777894074424!5m2!1spt-PT!2spt"
                 className="w-full h-full"
@@ -117,13 +138,8 @@ export default function ContactsPage() {
               />
             </div>
           </FadeIn>
-
-          {/* Contact form */}
-          <FadeIn direction="left" delay={0.15}>
-            <ContactForm />
-          </FadeIn>
+        </div>
         </div>
       </div>
-    </div>
   );
 }

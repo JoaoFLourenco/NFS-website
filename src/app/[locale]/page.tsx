@@ -7,12 +7,24 @@ import { FadeIn } from "@/components/sections/fade-in";
 import { getAllCars } from "@/lib/services/cars.service";
 import { cn } from "@/lib/utils";
 
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Nova Formula Student",
+  url: "https://nfs-website-nine.vercel.app",
+};
+
 export default function HomePage() {
   const t = useTranslations();
   const cars = getAllCars();
 
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
+      />
+
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

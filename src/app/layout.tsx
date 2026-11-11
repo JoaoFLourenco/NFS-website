@@ -9,10 +9,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  applicationName: "Nova Formula Student",
+  applicationName: "NOVA Formula Student",
   title: {
-    default: "Nova Formula Student",
-    template: "%s | Nova Formula Student",
+    default: "NOVA Formula Student",
+    template: "%s | NOVA Formula Student",
   },
   description:
     "Equipa de Fórmula Student da FCT NOVA - Projectamos, construímos e competimos por toda a Europa. Conheça os nossos automóveis inovadores, equipa e competições.",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     "Carro de corrida",
     "Racing car",
   ],
-  authors: [{ name: "Nova Formula Student" }],
-  creator: "Nova Formula Student",
-  publisher: "Nova Formula Student",
+  authors: [{ name: "NOVA Formula Student" }],
+  creator: "NOVA Formula Student",
+  publisher: "NOVA Formula Student",
   formatDetection: {
     email: false,
     telephone: false,
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_PT",
     url: "https://nfs-website-nine.vercel.app",
-    siteName: "Nova Formula Student",
-    title: "Nova Formula Student - Equipa de Fórmula Student da FCT NOVA",
+    siteName: "NOVA Formula Student",
+    title: "NOVA Formula Student - Equipa de Fórmula Student da FCT NOVA",
     description:
       "Equipa de Fórmula Student da FCT NOVA - Projectamos, construímos e competimos por toda a Europa com automóveis inovadores.",
     images: [
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova Formula Student",
+    title: "NOVA Formula Student",
     description:
       "Equipa de Fórmula Student da FCT NOVA - Automóveis inovadores",
   },

@@ -9,6 +9,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+  applicationName: "Nova Formula Student",
   title: {
     default: "Nova Formula Student",
     template: "%s | Nova Formula Student",
@@ -110,10 +111,20 @@ export default function RootLayout({
       "https://www.linkedin.com/company/nova-formula-student",
     ],
   };
+  const websiteStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Nova Formula Student",
+    url: "https://nfs-website-nine.vercel.app",
+  };
 
   return (
     <html className={`${raleway.variable} h-full`} suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

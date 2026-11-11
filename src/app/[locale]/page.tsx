@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const websiteStructuredData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Nova Formula Student",
+  name: "NOVA Formula Student",
   url: "https://nfs-website-nine.vercel.app",
 };
 

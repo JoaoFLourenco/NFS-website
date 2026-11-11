@@ -89,7 +89,7 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Nova Formula Student",
+    name: "NOVA Formula Student",
     url: "https://nfs-website-nine.vercel.app",
     logo: "https://nfs-website-nine.vercel.app/images/logo.png",
     description:
@@ -97,7 +97,7 @@ export default function RootLayout({
     foundingDate: "2015",
     location: {
       "@type": "Place",
-      name: "Nova Formula Student - Hangar 2, Faculdade de Ciências e Tecnologia, 2829-516 Caparica, Portugal",
+      name: "NOVA Formula Student - Hangar 2, Faculdade de Ciências e Tecnologia, 2829-516 Caparica, Portugal",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Hangar 2, Faculdade de Ciências e Tecnologia",

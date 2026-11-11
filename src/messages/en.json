@@ -4,6 +4,7 @@
     "about": "About Us",
     "garage": "Garage",
     "partners": "Partners",
+    "newsletter": "Newsletter",
     "contacts": "Contacts"
   },
   "home": {
@@ -125,6 +126,18 @@
     "partner": "Partner",
     "brands_on_car": "Brands on Our Car",
     "all_sponsors": "Sponsors"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Sign up to hear about our team, cars, and upcoming events.",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email",
+    "email_placeholder": "you@example.com",
+    "not_connected": "Signups aren't open yet. This preview doesn't save or send your information.",
+    "subscribe": "Signups coming soon",
+    "archive_prompt": "Looking for the newsletter archive?",
+    "archive_link": "It will be available here soon."
   },
   "contacts": {
     "title": "Contacts",

@@ -4,6 +4,7 @@
     "about": "Sobre Nós",
     "garage": "Garagem",
     "partners": "Parceiros",
+    "newsletter": "Newsletter",
     "contacts": "Contactos"
   },
   "home": {
@@ -125,6 +126,18 @@
     "partner": "Parceiros",
     "brands_on_car": "Marcas no Nosso Carro",
     "all_sponsors": "Patrocinadores"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Subscreve para receber novidades sobre a equipa, os nossos carros e os próximos eventos.",
+    "name": "Nome",
+    "name_placeholder": "O teu nome",
+    "email": "Email",
+    "email_placeholder": "tu@exemplo.pt",
+    "not_connected": "As inscrições ainda não estão abertas. Esta pré-visualização não guarda nem envia os teus dados.",
+    "subscribe": "Inscrições em breve",
+    "archive_prompt": "Procuras o arquivo da newsletter?",
+    "archive_link": "Estará disponível aqui em breve."
   },
   "contacts": {
     "title": "Contactos",

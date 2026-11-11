@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/about", key: "about" },
   { href: "/garage", key: "garage" },
   { href: "/partners", key: "partners" },
+  { href: "/newsletter", key: "newsletter" },
   { href: "/contacts", key: "contacts" },
 ] as const;
 

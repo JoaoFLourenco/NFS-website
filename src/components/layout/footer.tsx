@@ -31,6 +31,7 @@ const navLinks = [
   { href: "/about", key: "about" },
   { href: "/garage", key: "garage" },
   { href: "/partners", key: "partners" },
+  { href: "/newsletter", key: "newsletter" },
   { href: "/contacts", key: "contacts" },
 ] as const;
 
@@ -71,11 +72,11 @@ export function Footer() {
           </div>
 
           {/* Nav */}
-          <div className="space-y-3">
+          <div className="space-y-6">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
               Links
             </p>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-y-2">
               {navLinks.map(({ href, key }) => (
                 <li key={key}>
                   <Link
@@ -90,7 +91,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="space-y-3">
+          <div className="space-y-6">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
               {t("contacts.title")}
             </p>

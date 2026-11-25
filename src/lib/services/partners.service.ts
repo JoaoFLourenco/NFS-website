@@ -1,4 +1,4 @@
-import { partners } from "@/lib/data/partners";
+import { allSponsors as partners } from "@/lib/data/sponsor-data";
 import type { Partner, PartnerTier } from "@/lib/types/partner";
 
 export function getAllPartners(): Partner[] {

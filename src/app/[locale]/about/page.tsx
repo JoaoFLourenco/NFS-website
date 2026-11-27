@@ -73,6 +73,7 @@ export default function AboutPage() {
               alt="NFS Team Organisation Chart 26/27"
               width={1920}
               height={1080}
+              sizes="(max-width: 1280px) 100vw, 1280px"
               className="w-full h-auto"
             />
           </div>

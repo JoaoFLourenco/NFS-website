@@ -50,6 +50,7 @@ export default function GaragePage() {
                     src={car.heroImage}
                     alt={car.name}
                     fill
+                    sizes="(max-width: 1023px) 100vw, (max-width: 1280px) 50vw, 640px"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card lg:block hidden" />

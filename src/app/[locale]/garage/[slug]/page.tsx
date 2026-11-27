@@ -113,6 +113,7 @@ function CarDetailContent({
             src={car.heroImage}
             alt={car.name}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -196,6 +197,7 @@ function CarDetailContent({
                       src={getCarGalleryImageUrl(slug, filename)}
                       alt={`${car.name} photo ${i + 1}`}
                       fill
+                      sizes="(max-width: 767px) 50vw, (max-width: 1280px) 33vw, 405px"
                       className="object-cover"
                     />
                   </div>

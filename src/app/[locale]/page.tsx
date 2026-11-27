@@ -106,6 +106,7 @@ export default function HomePage() {
                 src="/images/team/team_photo_2026.JPG"
                 alt="Nova Formula Student Team"
                 fill
+                sizes="(max-width: 1023px) 100vw, (max-width: 1280px) 50vw, 608px"
                 className="object-cover"
               />
             </div>
@@ -134,6 +135,7 @@ export default function HomePage() {
                       src={car.heroImage}
                       alt={car.name}
                       fill
+                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1280px) 25vw, 308px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
